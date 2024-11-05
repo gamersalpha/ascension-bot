@@ -12,7 +12,7 @@ class CrossChatCog(commands.Cog):
         self.channel_id = CHATLOG_CHANNEL
 
     def load_config(self):
-        config_path = 'config.json'
+        config_path = '/app/data/config.json'
         with open(config_path) as config_file:
             self.config = json.load(config_file)
             self.servers = self.config["RCON_SERVERS"]
