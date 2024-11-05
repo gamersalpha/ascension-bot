@@ -33,7 +33,7 @@ class ChatLogCog(commands.Cog):
         self.get_chat.start()
 
     def load_config(self):
-        config_path = 'config.json'
+        config_path = '/app/data/config.json'
         with open(config_path) as config_file:
             config = json.load(config_file)
             self.servers = config["RCON_SERVERS"]
